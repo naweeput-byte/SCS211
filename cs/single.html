@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สาขาวิชาวิทยาการคอมพิวเตอร์ | VRU</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif;
+            padding-top: 80px;
+        }
+
+        .navbar {
+            backdrop-filter: blur(8px);
+        }
+
+        /* ===== Carousel ===== */
+        .carousel-item img {
+            width: 100%;
+            height: 520px;
+            object-fit: cover;
+        }
+
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.45);
+            border-radius: 16px;
+            padding: 20px 30px;
+        }
+
+        .carousel-caption h2 {
+            font-weight: 600;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background: #6f42c1;
+            display: block;
+            margin: 10px auto 0;
+        }
+
+        .footer {
+            background: #7e2abf;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">CS VRU</a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item"><a class="nav-link" href="index.html">หน้าหลัก</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">เกี่ยวกับ</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html">ข้อมูลหลักสูตร</a></li>
+                            <li><a class="dropdown-item" href="teacher.html">อาจารย์และบุคลากร</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">นักศึกษา</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">หลักสูตรที่เปิดสอน</a></li>
+                            <li><a class="dropdown-item" href="#">ระเบียบการศึกษา</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="news.html">ข่าว / บทความ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">ติดต่อ</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+
+        <!-- indicators -->
+        <div class="carousel-indicators">
+            <button data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            <button data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+            <button data-bs-target="#heroCarousel" data-bs-slide-to="4"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="https://cs.vru.ac.th/images/tcas/pr-2020-05-14.jpg" alt="CS VRU">
+                <div class="carousel-caption text-start">
+                    <h2>หลักสูตรวิทยาการคอมพิวเตอร์</h2>
+                    <p>มหาวิทยาลัยราชภัฏวไลยอลงกรณ์</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://pbs.twimg.com/media/D9lkDc_UcAMUQse.jpg" alt="กิจกรรมนักศึกษา">
+                <div class="carousel-caption">
+                    <h2>เรียนจริง ปฏิบัติจริง</h2>
+                    <p>พัฒนาทักษะด้านเทคโนโลยีสารสนเทศ</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://comit.vru.ac.th/ITweb/images/slide/4.jpg" alt="ห้องปฏิบัติการ">
+                <div class="carousel-caption">
+                    <h2>ห้องปฏิบัติการทันสมัย</h2>
+                    <p>รองรับการเรียนการสอนด้านคอมพิวเตอร์</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://www.vru.ac.th/wp-content/uploads/2023/11/400778504_6789359167850887_1632718538972282651_n-1024x683.jpg"
+                    alt="กิจกรรมการแข่งขัน">
+                <div class="carousel-caption text-end">
+                    <h2>กิจกรรมและการแข่งขัน</h2>
+                    <p>เสริมประสบการณ์จริงให้นักศึกษา</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/475159797_1136052261643734_579483245471389161_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=100&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=ufxuyvik6x4Q7kNvwHRBUpc&_nc_oc=Adm1AijlZARI7dm6DsQn2GrxYkGmC63hiIj9_H1fUeF1--2sTv_YlwA5HJomq7LIpHE&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=Jm__muFEBue0GIVRcjbbRw&oh=00_Aftf9sxDN1C600V-iDTutoccns9gHHIhZWdb1iY7_rVnuA&oe=6985F261"
+                    alt="อนาคตนักศึกษา">
+                <div class="carousel-caption">
+                    <h2>สร้างอนาคตด้านเทคโนโลยี</h2>
+                    <p>ก้าวสู่สายงานดิจิทัลอย่างมืออาชีพ</p>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- สมัครเรียน -->
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold section-title">สมัครเรียน</h2>
+            <p class="mt-3 text-muted">
+                เปิดรับสมัครนักศึกษาระดับปริญญาตรี หลักสูตรวิทยาการคอมพิวเตอร์
+            </p>
+            <a class="btn btn-success rounded-pill px-5">สมัครเรียนออนไลน์</a>
+        </div>
+    </section>
+
+    <!-- จุดเด่น -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold section-title">จุดเด่นหลักสูตร</h2>
+            <div class="row g-4 mt-4">
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-code-slash fs-1 text-primary"></i>
+                            <h5 class="mt-3">เรียนจริง ทำจริง</h5>
+                            <p class="text-muted">เน้นปฏิบัติ สร้างผลงานจริง</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-cloud fs-1 text-primary"></i>
+                            <h5 class="mt-3">เทคโนโลยีทันสมัย</h5>
+                            <p class="text-muted">Web, Mobile, Cloud, AI</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-people fs-1 text-primary"></i>
+                            <h5 class="mt-3">อาจารย์ดูแลใกล้ชิด</h5>
+                            <p class="text-muted">ให้คำปรึกษาตลอดการเรียน</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h6 class="fw-bold">สาขาวิชาวิทยาการคอมพิวเตอร์</h6>
+                    <p class="small">
+                        คณะวิทยาศาสตร์และเทคโนโลยี<br>
+                        มหาวิทยาลัยราชภัฏวไลยอลงกรณ์
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <h6 class="fw-bold">Quick Links</h6>
+                    <ul class="list-unstyled small">
+                        <li>สมัครเรียน</li>
+                        <li>ข่าวสาร</li>
+                        <li>ติดต่อ</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 text-md-end">
+                    <h6 class="fw-bold">ติดต่อ</h6>
+                    <p class="small mb-0">โทร 02-909-0674 ต่อ 365</p>
+                </div>
+            </div>
+
+            <hr class="border-light opacity-25">
+
+            <p class="text-center small mb-0">
+                © 2026 หลักสูตรวิทยาการคอมพิวเตอร์
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
